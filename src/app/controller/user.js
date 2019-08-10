@@ -6,43 +6,29 @@ const {
 @Controller('users')
 class Hello {
   /**
-   * ==========================================
-   * Example for Api Resource (collection)
-   * ==========================================
+   * Example for users list api
    * @uri GET /users
    */
   @Http.Get()
   index() {
-    const users = [
-      {
-        id: 1,
-        name: 'Xiaoming',
-        mobile: '13777777777',
-      },
-      {
-        id: 2,
-        name: 'lily',
-        mobile: '13777777777',
-        gender: 'F',
-      },
-    ];
+    // Example for Service
+    // ./service/user.js Service declaration
+    const users = this.service('user').getItems();
+    // Example for Api Resource (collection)
     // ./resource/user.js Resource declaration
     return this.resource('user').collection(users);
   }
 
   /**
-   * ==========================================
-   * Example for Api Resource (item)
-   * ==========================================
+   *  Example for user data api
    * @uri GET /users/:id
    */
   @Http.Get(':id')
   show(id) {
-    const user = {
-      id,
-      name: 'Xiaoming',
-      mobile: '13777777777',
-    };
+    // Example for Service
+    // ./service/user.js Service declaration
+    const user = this.service('user').getItemById(id);
+    // Example for Api Resource(item)
     // ./resource/user.js Resource declaration
     return this.resource('user').item(user);
   }
