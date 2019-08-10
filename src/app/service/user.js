@@ -1,5 +1,6 @@
 const { Service } = require('@dazejs/framework');
 
+@Service('user')
 class User {
   /**
    * ===============================================
