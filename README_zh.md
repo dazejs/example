@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/@dazejs/framework.svg)](https://www.npmjs.com/package/@dazejs/framework)
 [![npm](https://img.shields.io/npm/v/@dazejs/framework/next.svg)](https://www.npmjs.com/package/@dazejs/framework)
 [![npm](https://img.shields.io/npm/dm/@dazejs/framework.svg)](https://www.npmjs.com/package/@dazejs/framework)
-[![npm](https://travis-ci.com/dazejs/framework.svg?branch=master)](https://www.npmjs.com/package/dazejs)
+[![npm](https://travis-ci.com/dazejs/framework.svg?branch=master)](https://www.npmjs.com/package/dazejs/framework)
 [![codecov](https://codecov.io/gh/dazejs/framework/branch/master/graph/badge.svg)](https://codecov.io/gh/dazejs/framework)
 [![GitHub license](https://img.shields.io/github/license/dazejs/daze.svg)](https://github.com/dazejs/daze/blob/master/LICENSE)
 
@@ -12,28 +12,26 @@
     <img width="200" heigth="200" src="https://github.com/dazejs/daze/blob/master/logo.png">
   </a>  
   <h1>Daze.js</h1>
-  <h4>Web framwork for Node.js</h4>
+  <h4>Node.js 的 Web 框架</h4>
 </div>
 
-English | [中文](README_zh.md)
+中文 | [English](README.md)
 
-## Introduction
+## 介绍
 
-`Daze.js` is an efficient, highly extensible and powerful `Node.js` server-side Web development framework.
+`Daze.js` 是一款高效、高扩展性、功能强大的 `Node.js` 服务端 Web 开发框架。
 
+## 安装
 
-## Installation
+**`Beta` 版本现已可用!**
 
-**`Beta` version is now available!**
-
-> Beta version is still being tested, welcome developers to download the test, we will collect your comments, and actively upgrade maintenance
+> Beta 版本还在进行测试，欢迎各位开发者进行下载测试，我们会收集各位开发者的意见，并积极进行升级维护。
 
 ```bash
 $ npm install -g @dazejs/cli@next
 ```
 
-
-## Getting Started
+## 快速开始
 
 ```bash
 $ daze create example --next
@@ -41,11 +39,11 @@ $ cd example
 $ npm start
 ```
 
-visit `http://localhost:8005` to preview
+访问 `http://localhost:8005` 进行预览
 
-## Docs & Community
+## 文档 & 社区
 
-- [Documentations](https://dazejs.org/)
+- [中文文档](https://dazejs.org/zh/)
 
 ## License
 
