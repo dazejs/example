@@ -1,10 +1,14 @@
 
 const {
-  Controller, Http,
+  Controller, Http, useService,
 } = require('@dazejs/framework');
 
 @Controller('users')
 class Hello {
+  // Example for Service
+  // ./service/user.js Service declaration
+  @useService('user') userService;
+
   /**
    * Example for users list api
    * @uri GET /users
@@ -13,7 +17,7 @@ class Hello {
   index() {
     // Example for Service
     // ./service/user.js Service declaration
-    const users = this.service('user').getItems();
+    const users = this.userService.getItems();
     // Example for Api Resource (collection)
     // ./resource/user.js Resource declaration
     return this.resource('user').collection(users);
@@ -25,7 +29,7 @@ class Hello {
    */
   @Http.Get(':id')
   show(id) {
-    // Example for Service
+    // Example for Service 2
     // ./service/user.js Service declaration
     const user = this.service('user').getItemById(id);
     // Example for Api Resource(item)

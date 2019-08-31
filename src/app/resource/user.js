@@ -10,7 +10,7 @@ class User {
 
   resolve(data) {
     return {
-      id: +data.id,
+      id: Number(data.id),
       name: data.name,
       mobile: data.mobile,
       gender: this.genderText[data.gender] || 'Unknow',
