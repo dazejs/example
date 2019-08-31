@@ -1,10 +1,10 @@
 
 const {
-  Controller, Http, useService,
+  Controller, Route, Http, useService,
 } = require('@dazejs/framework');
 
-@Controller('users')
-class Hello {
+@Route('users')
+class Hello extends Controller {
   // Example for Service
   // ./service/user.js Service declaration
   @useService('user') userService;

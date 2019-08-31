@@ -1,8 +1,8 @@
 
-const { Resource } = require('@dazejs/framework');
+const { Resource, Component } = require('@dazejs/framework');
 
-@Resource('user')
-class User {
+@Component('user')
+class User extends Resource {
   genderText = {
     M: 'Male',
     F: 'Female',

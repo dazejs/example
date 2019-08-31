@@ -1,7 +1,7 @@
-const { Service } = require('@dazejs/framework');
+const { Service, Component } = require('@dazejs/framework');
 
-@Service('user')
-class User {
+@Component('user')
+class User extends Service {
   /**
    * ===============================================
    * Example for User Service
