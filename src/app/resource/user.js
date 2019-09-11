@@ -1,4 +1,3 @@
-
 const { Resource, Component } = require('@dazejs/framework');
 
 @Component('user')

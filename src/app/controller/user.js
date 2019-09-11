@@ -7,6 +7,7 @@ const {
 class Hello extends Controller {
   // Example for Service
   // ./service/user.js Service declaration
+  // 将 ./service/user.js Service 实例注入到 userService 属性中
   @useService('user') userService;
 
   /**
